@@ -379,7 +379,7 @@ Accordion on Resources page
   /** background: url(../img/about-img.jpg) center top no-repeat; **/
   background: #293d3d;
   margin-bottom: 10px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 #about .about-container .content {
@@ -388,11 +388,15 @@ Accordion on Resources page
   margin-right: 30px;
 }
 
+#about .about-container .paragraph {
+    font-size: 18px;
+}
+
 #about .about-container .title {
   color: #fff;
   font-family: 'Alata', sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 30px;
 }
 
 #about .about-container p {
@@ -406,7 +410,7 @@ Accordion on Resources page
 #about .about-container .icon-box {
   background: #293d3d;
   background-size: cover;
-  padding: 0 0 30px 0;
+  padding: 0 0 20px 0;
 }
 
 #about .about-container .icon-box .icon {
@@ -445,7 +449,7 @@ Accordion on Resources page
   margin-left: 80px;
   font-weight: 500;
   margin-bottom: 5px;
-  font-size: 18px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 
@@ -456,7 +460,7 @@ Accordion on Resources page
 #about .about-container .icon-box .description {
   margin-left: 80px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
