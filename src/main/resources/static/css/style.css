@@ -117,7 +117,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/womanonshore2.jpg) top center;
+  background-image: url(womanonshore2.jpg);
   background-size: cover;
   position: relative;
 }
@@ -156,6 +156,8 @@ h6 {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+  /* background: url(../img/womanonshore2.jpg) top center; */
+  /* background-image: url(womanonshore2.jpg); */
 }
 
 #hero h1 {

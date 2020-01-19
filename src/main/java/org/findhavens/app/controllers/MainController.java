@@ -19,4 +19,10 @@ public class MainController {
     public String resources(Model model) {
         return "resources";
     }
+
+    @RequestMapping(value = "login")
+    public String login(Model model) { return "login"; }
+
+    @RequestMapping(value = "register")
+    public String register(Model model) { return "register"; }
 }
