@@ -1,13 +1,4 @@
-/*
-  Theme Name: Regna
-  Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/*  General  */
 
 body {
   background: #293d3d;
@@ -58,9 +49,34 @@ h6 {
   background: #fff url("../img/preloader.svg") no-repeat center center;
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 6px 12px 9px 12px;
+  font-size: 16px;
+  border-radius: 2px;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+}
+
+.back-to-top:focus {
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  outline: none;
+}
+
+.back-to-top:hover {
+  background: #2dc997;
+  color: #fff;
+}
+
+
+/* Header */
 
 #header {
   padding: 30px 0;
@@ -110,9 +126,7 @@ h6 {
   transition: all 0.5s;
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
+/* Hero */
 
 #hero {
   width: 100%;
@@ -156,8 +170,6 @@ h6 {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  /* background: url(../img/womanonshore2.jpg) top center; */
-  /* background-image: url(womanonshore2.jpg); */
 }
 
 #hero h1 {
@@ -196,11 +208,9 @@ h6 {
   border: 2px solid #00b3b3;
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
+/* Nav Menu */
 
-/* Nav Menu Essentials */
+/* Essentials */
 
 .nav-menu,
 .nav-menu * {
@@ -240,14 +250,14 @@ h6 {
   min-width: 180px;
 }
 
-/* Nav Meu Container */
+/* Nav Menu Container */
 
 #nav-menu-container {
   float: right;
   margin-right: 30px;
 }
 
-/* Nav Meu Styling */
+/* Nav Menu Styling */
 
 .nav-menu a {
   padding: 0 8px 10px 8px;
@@ -318,9 +328,117 @@ h6 {
   margin: 0;
 }
 
-/* ---------------------------------------------------------------
-Carousel on main page
------------------------------------------------------------------ */
+/* Mobile Nav Toggle */
+
+#mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+#mobile-nav-toggle i {
+  color: #fff;
+}
+
+/* Mobile Nav Styling */
+
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(52, 59, 64, 0.9);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#mobile-nav ul li {
+  position: relative;
+}
+
+#mobile-nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+}
+
+#mobile-nav ul li a:hover {
+  color: #fff;
+}
+
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: #2dc997;
+}
+
+#mobile-nav ul .menu-item-active {
+  color: #2dc997;
+}
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(52, 59, 64, 0.9);
+  display: none;
+}
+
+/* Mobile Nav body classes */
+
+body.mobile-nav-active {
+  overflow: hidden;
+}
+
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+
+body.mobile-nav-active #mobile-nav-toggle {
+  color: #fff;
+}
+
+
+/* Carousel */
+
 .carousel-item {
     content-align: center;
 }
@@ -334,21 +452,16 @@ Carousel on main page
 }
 
 
-/* ---------------------------------------------------------------
-Accordion on Resources page
------------------------------------------------------------------ */
+/* Resources Accordion */
 
 .card-body {
     color: #000000;
 }
 
 
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
+/* Sections */
 
-/* Sections Header
---------------------------------*/
+/* Section Headers */
 
 .section-header .section-title {
   font-size: 32px;
@@ -366,8 +479,7 @@ Accordion on Resources page
   color: #999;
 }
 
-/* About Us Section
---------------------------------*/
+/* About */
 
 #about {
   background: #293d3d;
@@ -464,8 +576,7 @@ Accordion on Resources page
 }
 
 
-/* Resources Section
---------------------------------*/
+/* Resources Section */
 
 #resources {
   background: #293d3d;
@@ -514,9 +625,7 @@ Accordion on Resources page
 }
 
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* Footer */
 
 #footer {
   background: #343b40;
@@ -570,6 +679,10 @@ Accordion on Resources page
   #nav-menu-container {
     display: none;
   }
+
+  #mobile-nav-toggle {
+      display: inline;
+    }
 
   #about .about-container .title {
     padding-top: 15px;
