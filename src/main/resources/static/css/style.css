@@ -505,32 +505,10 @@ h6 {
   color: #ccc;
 }
 
-@media (min-width: 769px) {
-  #call-to-action .cta-btn-container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-  }
-}
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
-  }
-}
-
-@media (max-width: 1024px) {
-  #call-to-action {
-    background-attachment: scroll;
   }
 }
 
@@ -560,10 +538,6 @@ h6 {
 
   #nav-menu-container {
     display: none;
-  }
-
-  #mobile-nav-toggle {
-    display: inline;
   }
 
   #about .about-container .title {
