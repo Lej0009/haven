@@ -11,6 +11,9 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  //Map carousel
+  $('.carousel').carousel()
+
   // Initiate the wowjs
   new WOW().init();
 
@@ -57,6 +60,6 @@ jQuery(document).ready(function ($) {
       }
     }
   });
-
+  
 
 });
