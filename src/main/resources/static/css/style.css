@@ -329,6 +329,10 @@ Carousel on main page
     color: #fff;
 }
 
+#map {
+    padding-top: 80px;
+}
+
 
 /* ---------------------------------------------------------------
 Accordion on Resources page
@@ -353,7 +357,7 @@ Accordion on Resources page
   text-align: center;
   font-weight: 700;
   margin-bottom: 5px;
-  padding-top: 80px;
+  /* padding-top: 80px; */
 }
 
 .section-header .section-description {
@@ -375,7 +379,7 @@ Accordion on Resources page
   /** background: url(../img/about-img.jpg) center top no-repeat; **/
   background: #293d3d;
   margin-bottom: 10px;
-
+    padding-top: 30px;
 }
 
 #about .about-container .content {
