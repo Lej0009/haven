@@ -23,14 +23,13 @@
                 <li class="menu-active"><a href="../resources">Resources</a></li>
                 <li><a href="../login">Login</a></li>
                 <li><a href="../register">Register</a></li>
-            </ul>
+            <li>
             <a href="javascript: document.logoutForm.submit()" role="menuitem"> Logout</a>
 
-            <form class="form-inline my-2 my-lg-0" name="logoutForm" th:action="@{/logout}" method="post" th:hidden="true">
+            <form name="logoutForm" th:action="@{/logout}" method="post" th:hidden="true">
                 <input hidden type="submit" value="Sign Out"/>
-            </form>
-            <!--                    <a class="nav-link" th:if="${#request.userPrincipal != null}" th:action="@{/logout}" method="post">Sign Out</a>-->
-
+            </form></li>
+            </ul>
         </nav><!-- #nav-menu-container -->
     </div>
 </header><!-- #header -->
